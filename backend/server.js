@@ -27,6 +27,11 @@ app.get('/cats/database', (req, res) => {
   })
 })
 
+app.post('/cats/database', (req, res) => {
+  console.log(req.body)
+  res.send(req.body)
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
